@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: BostonHacks Museum
+title: BostonHacks
 email: contact@bostonhacks.io
 description: >- # this means to ignore newlines until "baseurl:"
   BostonHacks - Boston's premier collegiate MLH hackathon. 
@@ -26,10 +26,12 @@ github_username:  bostonhacks
 # Build settings
 markdown: kramdown
 
-# commented this out
-# theme: minima
+nextHackathon:
+  name: BostonHacks 2018
+  date: October 29th, 2018
+  location: Boston University - The George Sherman Union
 
-# commented this out
+# commented the following out
 # plugins:
 #   - jekyll-feed
 

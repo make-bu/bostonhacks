@@ -2,25 +2,20 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home">  
+  <h1> {{ site.nextHackathon.name }} </h1>
+  <div> {{ site.nextHackathon.date }} </div>
+  <div> {{ site.nextHackathon.location }} </div>
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+  <hr />
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+  <p><i>Later, this page will turn into the landing page we had for the last hackathon</i></p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <p> Sign up for our mailing list, or follow us on Facebook, to get notified when we have more information! </p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <div class="grid-x">
+    <div class="medium-6 cell"> <input type="text" placeholder="Enter your email"> </div>
+    <div class="medium-6 cell"> <a href="about.html" class="button">Submit</a> </div>
+  </div>
 
 </div>
