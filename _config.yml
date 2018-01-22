@@ -28,8 +28,8 @@ markdown: kramdown
 
 nextHackathon:
   name: BostonHacks 2018
-  date: October 29th, 2018
-  location: Boston University - The George Sherman Union
+  date: October 2018
+  location: Boston University
 
 # commented the following out
 # plugins:
