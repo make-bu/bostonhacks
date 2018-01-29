@@ -31,6 +31,9 @@ nextHackathon:
   date: October 2018
   location: Boston University
 
+# set this to either "noLanding" or "landing"
+landingStatus: noLanding
+
 # commented the following out
 # plugins:
 #   - jekyll-feed

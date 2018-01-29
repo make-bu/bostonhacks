@@ -2,16 +2,43 @@
 layout: default
 ---
 
-<h1> {{ page.title }} </h1>
-
-{% for ph in page.pastHackathons %}
-  <u><h2> {{ ph.name }} </h2></u>
-  <p> 
-    <i>{{ ph.date }}</i> <br />
-    Director: {{ ph.director }} <i>*** picture of director goes here ***</i> <br />
-    Organizers: {{ ph.organizers }} <i>**** picture of organizers goes here ***</i>
-  </p>
-  <p>*** Pictures of people have fun here ***</p>
-  <p>*** Sponsors here ***</p>
-  <p>*** Attendance statistics here ***</p>
-{% endfor %}
+<div class="container-fluid text-center">
+  <h2> {{ page.title }} </h2>
+  <br />
+  {% for ph in page.pastHackathons %}
+    <div class="row">
+      <div class="col-sm-4">
+        <h2> {{ ph.name }} </h2>
+        <img src="{{ ph.location_pic | relative_url }}" class="img-fluid">
+        <p> 
+          {{ ph.date }} <br />
+          Directed by {{ ph.director }} <br />
+          {{ ph.num_attendees }} attendees
+        </p>
+      </div>
+      <div class="col-sm-8">
+        <h4>Prizes:</h4> 
+        <p> {{ ph.prizes }} </p>
+        <h4>Sponsors:</h4>
+        <p> {{ ph.sponsors }} </p>
+        <h4>Projects:</h4> 
+        <p><a href="{{ ph.devpost }}">{{ph.devpost}}</a></p>
+        <p><small> Organized by {{ ph.organizers }} </small></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="{{ ph.director_pic | relative_url }}" class="img-fluid">
+      </div>
+      <div class="col-sm-4">
+        <img src="{{ ph.organizer_pic | relative_url }}" class="img-fluid">
+      </div>
+      <div class="col-sm-4">
+        <img src="{{ ph.highlight_pic | relative_url }}" class="img-fluid">
+      </div>
+    </div>
+    {% if forloop.last == false %}
+      <hr />
+    {% endif %}
+  {% endfor %}
+</div>

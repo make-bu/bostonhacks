@@ -1,5 +1,5 @@
 ---
 layout: home
-title: BostonHacks 2018
+title: BostonHacks
 permalink: /
 ---

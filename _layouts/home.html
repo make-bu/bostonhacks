@@ -2,36 +2,38 @@
 layout: default
 ---
 
-<div class="home">  
-  <h1> {{ site.nextHackathon.name }} </h1>
-  <div> {{ site.nextHackathon.date }} </div>
-  <div> {{ site.nextHackathon.location }} </div>
-  <br />
-  <i>
-    <div> attend button </div>
-    <div> sponsor button </div>
-    <div> general landing page things </div>
-    <div> hackathon / event specific things </div>
-    <div> schedule </div>
-    <div> FAQ </div>
-    <div> sponsors, supporting partners </div>
-  </i>
+<div class="container text-center">  
 
-  <hr />
+  {% if site.landingStatus == 'noLanding' %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2> {{ site.nextHackathon.name }} </h2>
+          <div> {{ site.nextHackathon.date }} - {{ site.nextHackathon.location }} </div>
+          <br />
+          <div> Thanks for your interest! Leave your email address or follow us on social media to get notified when there's more information available!</div>
+          <form>
+            <div class="form-group">
+              <label for="inputEmail"><i>Email address</i></label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  {% endif %}
 
-  <p><i>Later, this page will turn into the landing page we had for the last hackathon</i></p>
+  {% if site.landingStatus == 'landing' %}
+    <i>
+      <div> attend button </div>
+      <div> sponsor button </div>
+      <div> general landing page things </div>
+      <div> hackathon / event specific things </div>
+      <div> schedule </div>
+      <div> FAQ </div>
+      <div> sponsors, supporting partners </div>
+    </i>
+  {% endif %}
 
-  <p> Sign up for our mailing list, or follow us on Facebook, to get notified when we have more information! </p>
-
-  <div class="grid-x">
-    <div class="medium-6 cell"> <input type="text" placeholder="Enter your email"> </div>
-    <div class="medium-6 cell"> <a href="about.html" class="button">Submit</a> </div>
-  </div>
-
-  <p>
-    Check us out on social media! (This will be a footer later) <br />
-    Facebook: <a href="https://www.facebook.com/bostonhacks/">BostonHacks</a> <br />
-    Twitter: <a href="https://twitter.com/boston_hacks">@boston_hacks</a> <br />
-    Instagram: <a href="https://www.instagram.com/bostonhacks/">bostonhacks</a>
-  </p>
 </div>
