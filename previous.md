@@ -16,6 +16,7 @@ pastHackathons:
     devpost: https://bostonhacks-f17.devpost.com/ 
     prizes: Apple Airpods, Google Pixel Buds, Drones, Google Home Minis, Amazon Giftcards, Amazon Echos, Cash, MiP Robots, Spark Fellowship, Raspberry Pis, Dragonboards
     sponsors: Optum, Liberty Mutual, RedHat, Twilio, Weedmaps, Cadence, ITG, BU Spark, Boston University Department of Computer Science
+    attendee_graph: /assets/imgs/attendeegraph.png
   - 
     name: BostonHacks Two
     date: Spring 2017
@@ -30,6 +31,7 @@ pastHackathons:
     devpost: https://bostonhacks-s-2017.devpost.com/
     prizes: (1st), (2nd), (3rd), Cash, Apple Watches, Laptops, AWS Credit, Amazon Echos, Echo Dots
     sponsors: Bloomberg, Button, Citi, IsraelTechChallenge, Libery Mutual, Recovery Centers of America, SAMHSA, Twilio
+    attendee_graph: /assets/imgs/attendeegraph.png
   - 
     name: BostonHacks One
     date: Fall 2015
@@ -43,5 +45,6 @@ pastHackathons:
     devpost: https://bostonhacks.devpost.com/
     prizes: Trip to Disney, Dell Tablets, Hoverboards, 200 Chipotle Burritos, NewEgg.com Giftcards, Microsoft Surface Pro 3, Cash, Startup Grants + Mentorship, Drones, 1TB Hard Drives, Trip to Tech Conference
     sponsors: Google, Liberty Mutual, Citibank, GE, AT&T, Epic Systems, AutoDesk, Wolfram, HP, Microsoft, Mitre, Hitachi Data Systems, Thiel Foundation, Bloomberg, Twilio, Kayak, CapitalOne
+    attendee_graph: /assets/imgs/attendeegraph.png
 ---
 

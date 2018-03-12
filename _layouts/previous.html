@@ -1,44 +1,122 @@
 ---
 layout: default
 ---
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-<div class="container-fluid text-center">
-  <h2> {{ page.title }} </h2>
-  <br />
-  {% for ph in page.pastHackathons %}
-    <div class="row">
-      <div class="col-sm-4">
-        <h2> {{ ph.name }} </h2>
-        <img src="{{ ph.location_pic | relative_url }}" class="img-fluid">
-        <p> 
-          {{ ph.date }} <br />
-          Directed by {{ ph.director }} <br />
-          {{ ph.num_attendees }} attendees
-        </p>
-      </div>
-      <div class="col-sm-8">
-        <h4>Prizes:</h4> 
-        <p> {{ ph.prizes }} </p>
-        <h4>Sponsors:</h4>
-        <p> {{ ph.sponsors }} </p>
-        <h4>Projects:</h4> 
-        <p><a href="{{ ph.devpost }}">{{ph.devpost}}</a></p>
-        <p><small> Organized by {{ ph.organizers }} </small></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <img src="{{ ph.director_pic | relative_url }}" class="img-fluid">
-      </div>
-      <div class="col-sm-4">
-        <img src="{{ ph.organizer_pic | relative_url }}" class="img-fluid">
-      </div>
-      <div class="col-sm-4">
-        <img src="{{ ph.highlight_pic | relative_url }}" class="img-fluid">
-      </div>
-    </div>
-    {% if forloop.last == false %}
-      <hr />
-    {% endif %}
-  {% endfor %}
-</div>
+<head>
+	<link rel="stylesheet" href="{{ '/assets/css/app.css, ' | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container-fluid text-center">
+	  <h2> {{ page.title }} </h2>
+	  <br />
+	  {% for ph in page.pastHackathons %}
+	    <div class="row">
+	      <div class="col-sm-3" style="margin-left: 30px; text-align:center;">
+	        <h2> {{ ph.name }} </h2>
+	        <img src="{{ ph.location_pic | relative_url }}" class="img-fluid">
+	        <p> 
+	          {{ ph.date }} <br />
+	          Directed by {{ ph.director }} <br />
+	        </p>
+	      </div>
+	      <div class="col-sm-8 box" style="background-color: #f2f2f2; margin-left:4%;margin-bottom:30px;">
+	      	<div class="row" style="">
+	      		<div class="col-sm-4" style="margin-top: 15px;margin-bottom: 7.5px;padding-right:7.5px;">
+		      		<div class="attendees" style="background-color: white;height:100%;">
+		      			<h4 style="font-size: 4rem;padding-top: 10px;text-align: center;">{{ ph.num_attendees }}</h4>
+		      			<p style="padding-bottom: 20px;font-size: 1rem;text-align:center;">Attendees</p>
+		      		</div>
+	      		</div>
+	      		<div class="col-sm-8" style="margin-top: 15px;margin-bottom: 7.5px;padding-left:7.5px;">
+		      		<div style="background-color: white; height:100%;">
+		      			<div class="row" style="height:100%;">
+			      			<div class="col-sm-3" style="position: relative;">
+			      				<div  style="position: absolute;top: 43%;left: 65%;height: 30%;width: 50%;margin: -15% 0 0 -25%;">
+			      					<i class="fa fa-trophy" style="font-size: 4rem"></i>
+			        				
+			        			</div>
+			        		</div>
+			        		<div class="col-sm-8" style="margin-right: 15px;text-align: left;">
+			        			<h4 style="margin: 15px 0 0 0;">Prizes:</h4> 
+			        			<p > {{ ph.prizes }} </p>
+			        		</div>
+			        	</div>
+		        	</div>
+		        </div>
+			</div>
+	      	
+	      	<div class="row">
+	      		<div class="col-sm-8" style="margin-top: 7.5px;margin-bottom: 7.5px;padding-right:7.5px;">
+		      		<div style="background-color: white;height:100%;">
+		      			<div class="row" style="height:100%;">
+		        			<h4 style="margin:15px 0px 15px 45px;text-align: left;">Sponsors:</h4>
+		        			<p style="margin:0 15px 20px 45px;text-align: left;"> {{ ph.sponsors }} </p>
+		        		</div>
+		        	</div>
+		        </div>
+
+		        <div class="col-sm-4" style="margin-top: 7.5px;margin-bottom: 7.5px;padding-left:7.5px;">
+		        	<div style="background-color: white;height:100%">
+		        		<div style="background-color: white; height:100%;">
+			      			<div class="row" style="height:100%;">
+				        		<h4 style="margin:25px 15px 15px 30px;text-align: left;">See the projects on 
+				        		<!-- <p style="margin:0 15px 20px 45px;text-align: left;"> --><a href="{{ ph.devpost }}">Devpost!</a><!-- </p> --></h4>
+				        	</div>
+				        </div>
+				    </div>
+	        	</div>
+			</div>
+	      	
+	        <div class="row">
+	      		<div class="col-sm-2" style="margin-top: 7.5px;margin-bottom: 15px;padding-right:7.5px;">
+		      		<div style="background-color: white;height:100%;">
+		      			<!-- <div class="row" style="height:100%;">
+		        			<h4 style="margin:15px 0px 15px 45px;text-align: left;">Participants:</h4> -->
+		        			<img src="{{ ph.attendee_graph | relative_url }}" class="img-fluid">
+		        		<!-- </div> -->
+		        	</div>
+		        </div>
+
+		        <div class="col-sm-10" style="margin-top: 7.5px;margin-bottom: 15px;padding-left:7.5px;">
+		        	<div style="background-color: white;height:100%">
+		        		<div style="background-color: white; height:100%;">
+			      			<div class="row" style="height:100%;">
+				        		<h4 style="margin:15px 0px 15px 45px;text-align: left;">Organizers:</h4>
+		        			<p style="margin:0 15px 20px 45px;text-align: left;"> {{ ph.organizers }} </p>
+				        	</div>
+				        </div>
+				    </div>
+	        	</div>
+			</div>
+	      	
+		        	
+		    </div>
+
+	      </div>
+	    </div>
+<!-- 	    <div class="row">
+	      <div class="col-sm-4">
+	        <img src="{{ ph.director_pic | relative_url }}" class="img-fluid">
+	      </div>
+	      <div class="col-sm-4">
+	        <img src="{{ ph.organizer_pic | relative_url }}" class="img-fluid">
+	      </div>
+	      <div class="col-sm-4">
+	        <img src="{{ ph.highlight_pic | relative_url }}" class="img-fluid">
+	      </div>
+	    </div> -->
+	    {% if forloop.last == false %}
+	      <hr />
+	    {% endif %}
+	  {% endfor %}
+	</div>
+</body>
