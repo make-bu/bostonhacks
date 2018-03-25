@@ -48,35 +48,11 @@ layout: default
 	          Directed by {{ ph.director }} <br />
 	        </p>
 	      </div>
-	  	  </div>
-
-
-	  	  <!--mobile view-->
-	  	  <div class = "mobileShow">
-	  	  	<div class = "col" style="text-align:center;background-color:#f2f2f2;padding-top:10px;padding-bottom: 10px;">
-	  	  		<div class = "col" style="background-color: #ffffff; margin-bottom:15px;padding-top:5px;padding-bottom: 5px;">
-	  	  			<h4 style="font-size: 4rem">{{ ph.num_attendees }}</h4>
-	  	  			<p>Attendees</p>
-	  	  		</div>
-	  	  		<div class = "col" style="background-color: #ffffff; margin-bottom:15px;padding-top:5px;padding-bottom: 5px;">
-	  	  			<h4 style="font-size: 2rem">Prizes:</h4>
-	  	  			<p>{{ ph.prizes }}</p>
-	  	  		</div>
-	  	  		<div class = "col" style="background-color: #ffffff; margin-bottom:15px;padding-top:5px;padding-bottom: 5px;">
-	  	  			<h4 style="font-size: 2rem">Sponsors:</h4>
-	  	  			<p>{{ ph.sponsors }}</p>
-	  	  		</div>
-	  	  		<div class = "col" style="background-color: #ffffff; margin-bottom:15px;padding-top:5px;padding-bottom: 5px;">
-	  	  			<h4 style="margin:25px 15px 15px 30px;text-align: left;">See the projects on <a href="{{ ph.devpost }}">Devpost!</a></h4>
-	  	  		</div>
-	  	  	</div>
-	  	  </div>
-
-
+	  	  
 
 	  	  <!--desktop view-->
-	      <div class = "mobileHide">
-		      <div class="col-sm-8 box" style="background-color: #f2f2f2; margin-left:4%;margin-bottom:30px;">
+<!-- 	      <div class = "mobileHide"> -->
+		      <div class="mobileHide col-sm-8 box" style="background-color: #f2f2f2; margin-left:4%;margin-bottom:30px;">
 		      	<div class="row" style="">
 		      		<div class="col-sm-4" style="margin-top: 15px;margin-bottom: 7.5px;padding-right:7.5px;">
 			      		<div class="attendees" style="background-color: white;height:100%;">
@@ -147,10 +123,30 @@ layout: default
 				</div>
 		      	
 			        	
-			    </div>
+			   <!--  </div> -->
 			 </div>
 
 	      </div>
+	      	  	  <!--mobile view-->
+	  	  <div class = "mobileShow">
+	  	  	<div class = "col" style="text-align:center;background-color:#f2f2f2;padding-top:10px;padding-bottom: 10px;">
+	  	  		<div class = "col" style="background-color: #ffffff; margin-bottom:15px;padding-top:5px;padding-bottom: 5px;">
+	  	  			<h4 style="font-size: 4rem">{{ ph.num_attendees }}</h4>
+	  	  			<p>Attendees</p>
+	  	  		</div>
+	  	  		<div class = "col" style="background-color: #ffffff; margin-bottom:15px;padding-top:5px;padding-bottom: 5px;">
+	  	  			<h4 style="font-size: 2rem">Prizes:</h4>
+	  	  			<p>{{ ph.prizes }}</p>
+	  	  		</div>
+	  	  		<div class = "col" style="background-color: #ffffff; margin-bottom:15px;padding-top:5px;padding-bottom: 5px;">
+	  	  			<h4 style="font-size: 2rem">Sponsors:</h4>
+	  	  			<p>{{ ph.sponsors }}</p>
+	  	  		</div>
+	  	  		<div class = "col" style="background-color: #ffffff; margin-bottom:15px;padding-top:5px;padding-bottom: 5px;">
+	  	  			<h4 style="margin:25px 15px 15px 30px;text-align: left;">See the projects on <a href="{{ ph.devpost }}">Devpost!</a></h4>
+	  	  		</div>
+	  	  	</div>
+	  	  </div>
 	    </div>
 <!-- 	    <div class="row">
 	      <div class="col-sm-4">
