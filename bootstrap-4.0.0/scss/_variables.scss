@@ -71,6 +71,12 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
+// CHANGES:
+$primary: #d33f4e;
+$secondary: #a6eae2;
+$light: #80b7f9;
+$dark: #b8b8ef;
+
 $theme-colors: () !default;
 $theme-colors: map-merge((
   "primary":    $primary,

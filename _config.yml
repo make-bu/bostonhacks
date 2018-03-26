@@ -28,7 +28,7 @@ markdown: kramdown
 
 nextHackathon:
   name: BostonHacks 2018
-  date: October 2018
+  date: October 10th - 11th, 2018
   location: Boston University
 
 # set this to either "noLanding" or "landing"
@@ -42,7 +42,7 @@ landingStatus: noLanding
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - custom-bootstrap  
+  - bootstrap-4.0.0  
   # - Gemfile
 #   - Gemfile.lock
 #   - node_modules
