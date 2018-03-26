@@ -27,9 +27,9 @@ pastHackathons:
     highlight_pic: /assets/imgs/highlight_spring_2017.jpg
     organizers: Lucas Watson, Anna Goncharova, Brandon Ng, Mark Bestavaros, Katie Quirk, Rudhra Raveendran, Ken Garber, Sean Zhang, Charles Ma, Warren Patridge, Mariana Garces Dematté, Nicolas Hinderling, Alexandra Miller-Browne, Jack Knollmeyer, Sean Smith, Sean Zhang
     prizes: To be filled in.
-    num_attendees: 999
+    num_attendees: 300
     devpost: https://bostonhacks-s-2017.devpost.com/
-    prizes: (1st), (2nd), (3rd), Cash, Apple Watches, Laptops, AWS Credit, Amazon Echos, Echo Dots
+    prizes: Netflix and Chill, Ostrich Pillows, Amazon Echos, Cash, Apple Watches, Laptops, AWS Credit, Amazon Echos, Echo Dots
     sponsors: Bloomberg, Button, Citi, IsraelTechChallenge, Libery Mutual, Recovery Centers of America, SAMHSA, Twilio
     attendee_graph: /assets/imgs/attendeegraph.png
   - 
@@ -41,7 +41,7 @@ pastHackathons:
     location_pic: /assets/imgs/location_fall_2015.png
     highlight_pic: /assets/imgs/highlight_fall_2015.jpg
     organizers: Nicolas Hinderling, Alexandra Miller-Browne, Jack Knollmeyer, Huy Le, Sean Smith, Sean Zhang, Mark Bestavros, Dan Gorelick
-    num_attendees: 999
+    num_attendees: 450
     devpost: https://bostonhacks.devpost.com/
     prizes: Trip to Disney, Dell Tablets, Hoverboards, 200 Chipotle Burritos, NewEgg.com Giftcards, Microsoft Surface Pro 3, Cash, Startup Grants + Mentorship, Drones, 1TB Hard Drives, Trip to Tech Conference
     sponsors: Google, Liberty Mutual, Citibank, GE, AT&T, Epic Systems, AutoDesk, Wolfram, HP, Microsoft, Mitre, Hitachi Data Systems, Thiel Foundation, Bloomberg, Twilio, Kayak, CapitalOne
