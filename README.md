@@ -1,22 +1,6 @@
 # BostonHacks Museum
 This is the museum website for BostonHacks.
 
-## Website Pages:
-* Hackathon
-  * This will be the landing page, like bostonhacks.io
-  * "What is a hackathon" link
-  * Attend / Sponsor buttons
-  * About, Learning, Schedule, FAQ, Sponsors, etc...
-* Previous Events
-  * A list of hackathons, for each one:
-    * The name (BostonHacks One, BostonHacks Two, ...)
-    * The date
-    * A few photographs
-    * Attendance statistics
-    * Info on hacks, prizes, and a link to the devpost
-    * List of Sponsors
-    * Info on speakers (keynote and others), and workshops
-* About / Contact
-  * What is a hackathon
-  * What is a BostonHacks
-  * Info on how to reach us (an email address or a form to fill out)
+The museum site is made with Jekyll. To run it, navigate to the Jekyll website and follow their tutorial to get Jekyll and Bundler set up. 
+
+GitHub Pages can server jekyll sites without any special work, so push any changes you want to go live into the gh-pages branch.
