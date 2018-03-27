@@ -13,7 +13,7 @@ jobs:
 
     branches:
       only:
-        - gh-pages
+        - master
     
     steps:
       - checkout
