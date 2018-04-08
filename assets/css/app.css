@@ -2,6 +2,14 @@ body {
   margin-bottom: 1em; /* Margin bottom by footer height */
 }
 
+#landing-page{
+  /* height: 100%; */
+  background-image: url('/assets/imgs/background_img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
