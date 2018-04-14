@@ -93,7 +93,7 @@ layout: default
       <br />
     </div> -->
     <div class="col-md" style="margin-bottom: 40px">
-      <img src="/assets/imgs/schedule.png" style="height:500px">
+      <img src="/assets/imgs/schedule.png" style="max-width:80%">
       <br />
     </div>
   </div>
@@ -127,7 +127,7 @@ layout: default
 
     </div>
     <div class="col-md-4" style="border-left:1px solid #e6e6e6;">
-      <img src="/assets/imgs/vr_icon.png" style="height:80px">
+      <p style="font-size:80px"><i class="fa fa-gears fa-lg"></i><p/>
       <h3> Machine Learning </h3>
       <br/>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus cursus mi feugiat
@@ -144,6 +144,7 @@ layout: default
 
   <br/>
   <br/>
+  <br/>
 
 
 
@@ -151,66 +152,171 @@ layout: default
     <div class="col-md-12">
       <br />
       <h2>Frequently Asked Questions</h2>
+        <br/>
     </div>
   </div>
-  <div class="row" style="background-color:#f2f2f2;">
-    <div class="col-md-10 offset-md-1">
 
-      <div class="row">
-        <div class="col-md-4">
-          <br />
-          <b>Where is it? </b> <br />
-          George Sherman Union, 2nd Floor in Metcalf Hall at 775 Commonwealth Avenue, Boston, MA, 02215.
+  <div class="row text-left" style="background-color:#f2f2f2; padding-bottom: 30px">
+    <div class="col-md-1"></div>
+    <div class="col-md">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#whereisit" aria-expanded="false" aria-controls="whereisit">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> Where is it? </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+
+          <div id="whereisit" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              George Sherman Union, 2nd Floor in Metcalf Hall at 775 Commonwealth Avenue, Boston, MA, 02215.
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <br />
-          <b>Who's coming? </b> <br />
-          We expect 400 to 450 hackers from all over North America to attend BostonHacks.
+        <div class="card">
+          <div class="card-header" id="headingTwo" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#WhoisGoing" aria-expanded="false" aria-controls="WhoisGoing">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> Who's coming? </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="WhoisGoing" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              We expect 400 to 450 hackers from all over North America to attend BostonHacks.
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <br />
-          <b>Who can attend? </b> <br />
-          All students are welcome. Unfortunately, we will not be able to accommodate students under 18 this year (unless you are a BU student).
+        <div class="card">
+          <div class="card-header" id="headingThree" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#whoCanAttend" aria-expanded="false" aria-controls="whoCanAttend">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> Who can attend? </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="whoCanAttend" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              All students are welcome. Unfortunately, we will not be able to accommodate students under 18 this year (unless you are a BU student).
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Experience" aria-expanded="false" aria-controls="Experience">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> Do I need experience? </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="Experience" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+              No experience necessary. We will have plenty of mentors and resources, along with several workshops targeted for beginners. Come learn and experience your first hackathon at BostonHacks!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Rules" aria-expanded="false" aria-controls="Rules">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> Are there any rules? </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="Rules" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+              We want to ensure a positive experience for all participants. We encourage you to read the Code of Conduct.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSix" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Bring" aria-expanded="false" aria-controls="Bring">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> What should I bring? </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="Bring" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+            <div class="card-body">
+              You should bring your laptop, phone, chargers, toiletries, and optionally a sleeping bag. All food and other accommodations will be taken care of.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSeven" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Teams" aria-expanded="false" aria-controls="Teams">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> Can we form teams?</div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="Teams" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion" style="background-color:#d33f4e">
+            <div class="card-body">
+              Of course you can! We encourage people to work in teams of up to 5 people. You may opt-in to team formation during registration which will match you with an ideal team. You can work alone, but it won't be the same.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingEight" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#cost" aria-expanded="false" aria-controls="cost">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> Does it cost anything? </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="cost" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+            <div class="card-body">
+              BostonHacks is 100% free. You don't have to spend a dime!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingNine" style="background-color: white">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#reimbursements" aria-expanded="false" aria-controls="reimbursements">
+                <div class="row">
+                  <div class="col-md-1"> <i class="fa fa-plus fa-lg"></i></div>
+                  <div class="col-md"> Will there be travel reimbursements? </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="reimbursements" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+            <div class="card-body">
+              We're handling travel reimbursements on a case-by-case basis. We're also working on potentially providing busses to regions like New York and Canada.
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <br />
-          <b>Do I need experience? </b> <br />
-          No experience necessary. We will have plenty of mentors and resources, along with several workshops targeted for beginners. Come learn and experience your first hackathon at BostonHacks!
-        </div>
-        <div class="col-md-4">
-          <br />
-          <b>Are there any rules? </b> <br />
-          We want to ensure a positive experience for all participants. We encourage you to read the Code of Conduct.
-        </div>
-        <div class="col-md-4">
-          <br />
-          <b>What should I bring? </b> <br />
-          You should bring your laptop, phone, chargers, toiletries, and optionally a sleeping bag. All food and other accommodations will be taken care of.
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <br />
-          <b>Can we form teams?</b> <br />
-          Of course you can! We encourage people to work in teams of up to 5 people. You may opt-in to team formation during registration which will match you with an ideal team. You can work alone, but it won't be the same.
-        </div>
-        <div class="col-md-4">
-          <br />
-          <b>Does it cost anything?</b> <br/ >
-          BostonHacks is 100% free. You don't have to spend a dime!
-        </div>
-        <div class="col-md-4">
-          <br />
-          <b>Will there be travel reimbursements? </b> <br />
-          We're handling travel reimbursements on a case-by-case basis. We're also working on potentially providing busses to regions like New York and Canada.
-        </div>
-      </div>
-
     </div>
+    <div class="col-md-1"></div>
   </div>
 
 </div>
