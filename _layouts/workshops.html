@@ -21,7 +21,7 @@ layout: default
 				<br/>
 				<p>BostonHacks hosts on campus workshops throughout the year. Come hang out, have fun, and learn, even when it's not the hackathon season.
 
-					You can follow us on facebook or twitter for updates!
+					You can follow us on <a href="https://www.facebook.com/bostonhacks/">Facebook</a> or <a href="https://twitter.com/boston_hacks">Twitter</a> for updates!
 				</p>
 			</div>
 		<div class="col-md-4"></div>
@@ -37,24 +37,25 @@ layout: default
 
 			</div>
 		</div> -->
-
-		<div class="row" style="text-align: left">
-
+		
+		<div class="row" style="text-align: center">
+		
 			<div class="col-md-1"></div>
-			<div class="col-md" style="border:2px solid #f2f2f2; margin: 30px 0 30px 30px;">
+			{% for pw in page.pastWorkshops %}
+<!-- 			<div class="col-md" style="border:2px solid #f2f2f2; margin: 30px 0 30px 30px;">
 				<br/>
 				<p style="font-size:100px; text-align:center; color:#d33f4e;">
 					<i class="fa fa-briefcase fa-lg"></i>
 				</p>
 				<h4> Internship Success Panel </h4>
-				<br/>
+				<p style="font-style:italic;"> Apr 11, 2018 </p>
 
-				<p> Learn about how to succeed in a summer internship from experienced students that interned on companies including Buzzfeed, IBM, Bloomberg.
+				<p> Learn about how to succeed in a summer internship from a panel of experienced students that have been interns for notable companies including Buzzfeed, IBM, Bloomberg, Coinbase, and Twitter.
 				</p>
-				<p> Date: 01/01/01 </p>
+				
 
 				<p style="text-align:center;">
-					<a href="https://placehold.com454"><button class="btn btn-outline-danger">Github Repository</button></a>
+					<a href="https://www.facebook.com/events/822430134623440/"><button class="btn btn-outline-danger">Facebook Event</button></a>
 				</p>
 				<br/>
 			</div>
@@ -64,17 +65,16 @@ layout: default
 					<i class="fa fa-cloud fa-lg"></i>
 				</p>
 
-				<h4> Demystifying the cloud: all about cloud infrastructure</h4>
-				<br/>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus cursus mi feugiat
+				<h4> Demystifying the Cloud</h4>
+				<p style="font-style:italic;"> Mar 12, 2018 </p>
+				<p> Learn how to create, configure, and launch a server.  Additionally, we talk about how many different tools of the cloud, like nameservers, DNS, proxies, load balancing, and more, work together to make a server secure and performant.
 				</p>
-				<p> Date: 01/01/01 </p>
 				<p style="text-align:center;">
-					<a href="https://placehold.com454"><button class="btn btn-outline-danger">Github Repository</button></a>
+					<a href="https://www.facebook.com/events/941148822726114/"><button class="btn btn-outline-danger">Facebook Event</button></a>
 				</p>
 				<br/>
 			</div>
-			<!-- <div class="col-md" style="border:2px solid #f2f2f2; margin: 30px 0 30px 30px;">
+			<div class="col-md" style="border:2px solid #f2f2f2; margin: 30px 0 30px 30px;">
 				<br/>
 				<h4> How to succeed in a summer internship </h4>
 				<br/>
@@ -84,24 +84,41 @@ layout: default
 					<a href="https://placehold.com454"><button class="btn btn-outline-danger">Github Repository</button></a>
 				</p>
 				<br/>
-			</div> -->
+			</div>
 			<div class="col-md" style="border:2px solid #f2f2f2; margin: 30px 0 30px 30px;">
 				<br/>
 				<p style="font-size:100px; text-align:center; color:#d33f4e;">
 					<i class="fa fa-laptop fa-lg"></i>
 				</p>
-				<h4> Local hack day (mini hackathon)</h4>
-				<br/>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus cursus mi feugiat
+				<h4> Local Hack Day</h4>
+				<p style="font-style:italic;"> Dec 2, 2018 </p>
+				<p> Local Hack Day is a 12 hour hack day that brings together the local hacker community to celebrate building awesome technology. Students around the world will  simultaneously host their own MLH Local Hack Day at their schools.
 				</p>
-				<p> Date: 01/01/01 </p>
 				<p style="text-align:center;">
-					<a href="https://placehold.com454"><button class="btn btn-outline-danger">Github Repository</button></a>
+					<a href="https://www.facebook.com/events/918866211609482/"><button class="btn btn-outline-danger">Facebook Event</button></a>
+				</p>
+				<br/>
+			</div> -->
+			<div class="col-md" style="border:2px solid #f2f2f2; margin: 30px 0 30px 30px;">
+				<br/>
+				<p style="font-size:100px; text-align:center; color:#d33f4e;">
+					<i class="fa {{ pw.icon }} fa-lg"></i>
+				</p>
+				<h4> {{ pw.name }}</h4>
+				<p style="font-style:italic;"> {{ pw.date }} </p>
+				<p> {{ pw.description }}
+				</p>
+				<p style="text-align:center;">
+					<a href="{{ pw.facebook_event }}"><button class="btn btn-outline-danger">Facebook Event</button></a>
 				</p>
 				<br/>
 			</div>
-
+			{% if forloop.last == false %}
+	      <hr />
+	    {% endif %}
+	  {% endfor %}
 			<div class="col-md-1"></div>
+
 		</div>
 
 </body>
