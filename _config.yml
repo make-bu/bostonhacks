@@ -16,7 +16,7 @@
 title: BostonHacks
 email: contact@bostonhacks.io
 description: >- # this means to ignore newlines until "baseurl:"
-  BostonHacks - Boston's premier collegiate MLH hackathon. 
+  BostonHacks - Boston's premier collegiate MLH hackathon.
   Join over 400 students in a weekend of hacking and fun.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://museo.bostonhacks.io"
@@ -28,7 +28,7 @@ markdown: kramdown
 
 nextHackathon:
   name: BostonHacks 2018
-  date: October 10th - 11th, 2018
+  date: November 10th - 11th, 2018
   location: Boston University
 
 # set this to either "noLanding" or "landing"
@@ -42,7 +42,7 @@ landingStatus: noLanding
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - bootstrap-4.0.0  
+  - bootstrap-4.0.0
   # - Gemfile
 #   - Gemfile.lock
 #   - node_modules
