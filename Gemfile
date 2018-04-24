@@ -26,5 +26,3 @@ gem "github-pages", group: :jekyll_plugins
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-# Added at 2018-04-23 21:11:41 -0400 by watson:
-gem "jekyll", "~> 3.6"

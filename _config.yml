@@ -17,7 +17,7 @@ title: BostonHacks
 email: contact@bostonhacks.io
 description: >- # this means to ignore newlines until "baseurl:"
   BostonHacks - Boston's premier collegiate MLH hackathon.
-  Join over 400 students in a weekend of hacking and fun.
+  Join over 450 students in a weekend of hacking, learning, and fun.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://museo.bostonhacks.io"
 twitter_username: boston_hacks
