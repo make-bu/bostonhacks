@@ -11,7 +11,7 @@ pastHackathons:
     organizer_pic: /assets/imgs/organizers_fall_2017_2.jpg
     location_pic: /assets/imgs/location_fall_2017.jpg
     highlight_pic: /assets/imgs/highlight_fall_2017.jpg
-    organizers: Andrew Hoang, Anna Goncharova, Brandon Ng, Mark Bestavaros, Katie Quirk, Rudhra Raveendran, Ken Garber, Sean Zhang, Charles Ma, Warren Patridge, Mariana Garces Dematté, Ibrahim Shaikh, Sarah Greisdorf, Noah Naiman, Jason Cho, Sarah Rieger, Emmanuel Amponsah
+    organizers: Andrew Hoang, Anna Goncharova, Brandon Ng, Mark Bestavros, Katie Quirk, Rudhra Raveendran, Ken Garber, Sean Zhang, Charles Ma, Warren Patridge, Mariana Garces Dematté, Ibrahim Shaikh, Sarah Greisdorf, Noah Naiman, Jason Cho, Sarah Rieger, Emmanuel Amponsah
     num_attendees: 450
     devpost: https://bostonhacks-f17.devpost.com/ 
     prizes: Apple Airpods, Google Pixel Buds, Drones, Google Home Minis, Amazon Giftcards, Amazon Echos, Cash, MiP Robots, Spark Fellowship, Raspberry Pis, Dragonboards
@@ -25,7 +25,7 @@ pastHackathons:
     organizer_pic: /assets/imgs/organizers_spring_2017.jpg
     location_pic: /assets/imgs/location_spring_2017.jpg
     highlight_pic: /assets/imgs/highlight_spring_2017.jpg
-    organizers: Lucas Watson, Anna Goncharova, Brandon Ng, Mark Bestavaros, Katie Quirk, Rudhra Raveendran, Ken Garber, Sean Zhang, Charles Ma, Warren Patridge, Mariana Garces Dematté, Nicolas Hinderling, Alexandra Miller-Browne, Jack Knollmeyer, Sean Smith, Sean Zhang
+    organizers: Lucas Watson, Anna Goncharova, Brandon Ng, Mark Bestavros, Katie Quirk, Rudhra Raveendran, Ken Garber, Sean Zhang, Charles Ma, Warren Patridge, Mariana Garces Dematté, Nicolas Hinderling, Alexandra Miller-Browne, Jack Knollmeyer, Sean Smith, Sean Zhang
     prizes: To be filled in.
     num_attendees: 300
     devpost: https://bostonhacks-s-2017.devpost.com/
