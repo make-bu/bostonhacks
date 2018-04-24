@@ -233,6 +233,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll (~> 3.6)
   tzinfo-data
 
 BUNDLED WITH

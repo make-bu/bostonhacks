@@ -34,6 +34,8 @@ nextHackathon:
 # set this to either "noLanding" or "landing"
 landingStatus: noLanding
 
+google_analytics: UA-67825496-10
+
 # commented the following out
 # plugins:
 #   - jekyll-feed

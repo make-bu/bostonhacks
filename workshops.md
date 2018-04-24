@@ -4,6 +4,12 @@ title: Workshops
 permalink: /workshops/
 pastWorkshops:
   -
+   name: Deep Learning with Keras
+   date: Apr 26, 2018
+   description: Learn how neural networks, the backbone of modern data analysis and image recognition, work and are trained for practical use. 
+   facebook_event: https://www.facebook.com/events/764947340360843/
+   icon: fa-graduation-cap
+  -
    name: Internship Success Panel
    date: Apr 11, 2018
    description: Learn about how to succeed in a summer internship from a panel of experienced students that have been interns for notable companies including Buzzfeed, IBM, Bloomberg, Coinbase, and Twitter.
