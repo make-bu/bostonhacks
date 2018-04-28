@@ -4,6 +4,12 @@ title: Workshops
 permalink: /workshops/
 pastWorkshops:
   -
+   name: Introduction to Computer Vision
+   date: May 1, 2018
+   description: Discover the wide range of sensing that computer vision allows. Learn about and implement some basic applications. 
+   facebook_event: https://www.facebook.com/events/1676129599169111/
+   icon: fa-eye
+  -
    name: Deep Learning with Keras
    date: Apr 26, 2018
    description: Learn how neural networks, the backbone of modern data analysis and image recognition, work and are trained for practical use. 
